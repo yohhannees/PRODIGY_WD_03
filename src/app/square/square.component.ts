@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { style } from '@angular/animations';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-square',
-  template: `<p>{{random}}</p>`,
+  template: `<button>{{value}}</button>`,
   // templateUrl: './square.component.html',
-  
-  styleUrls: ['./square.component.scss']
+  styleUrls: ['./square.component.scss'],
+  styles:[]
 })
 export class SquareComponent {
-  random=Math.random();
-
+  @Input() value: 'X' | 'O';
 }
