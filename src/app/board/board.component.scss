@@ -1,12 +1,12 @@
 main {
     display: grid;
     grid-template-columns: 200px 200px 200px;
-    grid-gap: 0px;
+    grid-gap: 2px;
 }
   
 app-square {
-    border: 1px gray solid;
-    height: 200px;
+    border: 1px rgb(247, 247, 247) solid;
+    height: 150px;
      font-size: 400px ;
     font-weight: bold;
     display: flex;
@@ -14,4 +14,10 @@ app-square {
     align-items: center;
     
 }
+// .container
+// {
+//     justify-self: center;
+
+//     padding-left: 300px;
+// }
 
