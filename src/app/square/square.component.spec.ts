@@ -1,23 +1,19 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, Input } from '@angular/core';
 
-import { SquareComponent } from './square.component';
-
-describe('SquareComponent', () => {
-  let component: SquareComponent;
-  let fixture: ComponentFixture<SquareComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ SquareComponent ]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(SquareComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+@Component({
+  selector: 'app-square',
+  template: `
+    <button nbButton *ngIf="!value">{{ value }}</button>
+    <button nbButton hero status="success" *ngIf="value == 'X'">
+      {{ value }}
+    </button>
+    <button nbButton hero status="info" *ngIf="value == 'O'">
+      {{ value }}
+    </button>
+  `,
+  styles: ['button { width: 100%; height: 100%; font-size: 5em !important; }'],
+})
+export class SquareComponent {
+  @Input()
+  value: 'X' | 'O' = "X"; 
+}
