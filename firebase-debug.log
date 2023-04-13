@@ -1,0 +1,66 @@
+[debug] [2023-04-13T23:30:54.521Z] ----------------------------------------------------------------------
+[debug] [2023-04-13T23:30:54.523Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\user\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-04-13T23:30:54.524Z] CLI Version:   11.27.0
+[debug] [2023-04-13T23:30:54.524Z] Platform:      win32
+[debug] [2023-04-13T23:30:54.524Z] Node Version:  v18.13.0
+[debug] [2023-04-13T23:30:54.525Z] Time:          Fri Apr 14 2023 02:30:54 GMT+0300 (Moscow Standard Time)
+[debug] [2023-04-13T23:30:54.525Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-13T23:30:54.592Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-13T23:30:54.593Z] > authorizing via signed-in user (yohannesgetachewerieso@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\user\Ti
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-04-13T23:31:43.566Z] Using project from CLI flag: tic-tac-toe-0001
+[debug] [2023-04-13T23:31:43.568Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tic-tac-toe-0001 [none]
+[debug] [2023-04-13T23:31:44.335Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tic-tac-toe-0001 200
+[debug] [2023-04-13T23:31:44.335Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tic-tac-toe-0001 {"projectId":"tic-tac-toe-0001","projectNumber":"986760143476","displayName":"Tic Tac Toe","name":"projects/tic-tac-toe-0001","resources":{"hostingSite":"tic-tac-toe-0001","realtimeDatabaseInstance":"tic-tac-toe-0001-default-rtdb"},"state":"ACTIVE","etag":"1_e9968a68-f98a-406d-a790-936b7a83742a"}
+[info] i  Using project tic-tac-toe-0001 (Tic Tac Toe) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-04-13T23:33:05.351Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-04-13T23:33:05.930Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-04-13T23:33:05.930Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.19.1","browserURL":"https://www.gstatic.com/firebasejs/9.19.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.19.1/firebase.tgz"},"live":{"version":"9.19","browserURL":"https://www.gstatic.com/firebasejs/live/9.19/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.19/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.19.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.19.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.19.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.19.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/9.19.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/9.19.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.19.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.19.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.19.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.19.1/firebase-firestore.memory.js"}}
+[info] +  Wrote y/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\user\Ti 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=356039976&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-04-13T23:33:25.074Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-04-13T23:33:25.075Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-04-13T23:33:25.805Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-04-13T23:33:25.805Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-04-13T23:33:26.020Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-04-13T23:33:26.722Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-04-13T23:33:26.722Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"yohhannees","id":105593295,"node_id":"U_kgDOBks5zw","avatar_url":"https://avatars.githubusercontent.com/u/105593295?v=4","gravatar_id":"","url":"https://api.github.com/users/yohhannees","html_url":"https://github.com/yohhannees","followers_url":"https://api.github.com/users/yohhannees/followers","following_url":"https://api.github.com/users/yohhannees/following{/other_user}","gists_url":"https://api.github.com/users/yohhannees/gists{/gist_id}","starred_url":"https://api.github.com/users/yohhannees/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/yohhannees/subscriptions","organizations_url":"https://api.github.com/users/yohhannees/orgs","repos_url":"https://api.github.com/users/yohhannees/repos","events_url":"https://api.github.com/users/yohhannees/events{/privacy}","received_events_url":"https://api.github.com/users/yohhannees/received_events","type":"User","site_admin":false,"name":"Yohannes Getachew","company":"Addis Ababa Science And Technology University","blog":"yohannesgetachewerieso@gmail.com","location":"Addis Ababa","email":null,"hireable":null,"bio":" Software Engineer And UX-UI Designer\r\n","twitter_username":"yohhannees","public_repos":48,"public_gists":0,"followers":8,"following":11,"created_at":"2022-05-15T13:17:18Z","updated_at":"2023-03-23T06:30:28Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":100567,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] +  Success! Logged into GitHub as yohhannees 
+[info] 
